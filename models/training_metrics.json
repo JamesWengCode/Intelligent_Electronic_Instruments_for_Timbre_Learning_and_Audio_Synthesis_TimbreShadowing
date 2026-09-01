@@ -1,0 +1,30 @@
+{
+  "overall_accuracy": 0.9650756693830035,
+  "per_instrument_accuracy": {
+    "french_horn": 0.8518518518518519,
+    "trombone": 0.9259259259259259,
+    "trumpet": 0.88,
+    "tuba": 0.9545454545454546,
+    "electric_bass": 1.0,
+    "electric_guitar": 1.0,
+    "acoustic_piano": 1.0,
+    "synth": 0.995260663507109,
+    "cello": 1.0,
+    "double_bass": 1.0,
+    "viola": 0.9836065573770492,
+    "violin": 1.0,
+    "bassoon": 0.8,
+    "clarinet": 0.7692307692307693,
+    "flute": 0.9411764705882353,
+    "oboe": 0.9545454545454546,
+    "saxophone": 0.9583333333333334
+  },
+  "overall_family_accuracy": 0.9674039580908033,
+  "per_family_accuracy": {
+    "strings": 0.9947643979057592,
+    "woodwinds": 0.8680555555555556,
+    "brass": 0.9306930693069307,
+    "keyboard": 0.9961977186311787,
+    "guitar": 1.0
+  }
+}

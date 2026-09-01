@@ -1,0 +1,70 @@
+{
+  "french_horn": {
+    "start_midi": 36,
+    "count": 36
+  },
+  "trombone": {
+    "start_midi": 24,
+    "count": 36
+  },
+  "trumpet": {
+    "start_midi": 48,
+    "count": 36
+  },
+  "tuba": {
+    "start_midi": 24,
+    "count": 36
+  },
+  "electric_bass": {
+    "start_midi": 24,
+    "count": 36
+  },
+  "electric_guitar": {
+    "start_midi": 36,
+    "count": 36
+  },
+  "acoustic_piano": {
+    "start_midi": 36,
+    "count": 36
+  },
+  "synth": {
+    "start_midi": 36,
+    "count": 36
+  },
+  "cello": {
+    "start_midi": 48,
+    "count": 36
+  },
+  "double_bass": {
+    "start_midi": 24,
+    "count": 36
+  },
+  "viola": {
+    "start_midi": 48,
+    "count": 36
+  },
+  "violin": {
+    "start_midi": 60,
+    "count": 36
+  },
+  "bassoon": {
+    "start_midi": 36,
+    "count": 36
+  },
+  "clarinet": {
+    "start_midi": 48,
+    "count": 36
+  },
+  "flute": {
+    "start_midi": 60,
+    "count": 36
+  },
+  "oboe": {
+    "start_midi": 60,
+    "count": 36
+  },
+  "saxophone": {
+    "start_midi": 48,
+    "count": 36
+  }
+}

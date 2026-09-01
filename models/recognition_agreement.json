@@ -1,0 +1,41 @@
+{
+  "electric_bass": {
+    "agreed": 1,
+    "corrected": 0,
+    "family_agreed": 1,
+    "family_corrected": 0,
+    "corrected_to": {}
+  },
+  "acoustic_piano": {
+    "agreed": 1,
+    "corrected": 0,
+    "family_agreed": 1,
+    "family_corrected": 0,
+    "corrected_to": {}
+  },
+  "cello": {
+    "agreed": 1,
+    "corrected": 1,
+    "family_agreed": 2,
+    "family_corrected": 0,
+    "corrected_to": {
+      "violin": 1
+    }
+  },
+  "synth": {
+    "agreed": 0,
+    "corrected": 1,
+    "family_agreed": 0,
+    "family_corrected": 1,
+    "corrected_to": {
+      "flute": 1
+    }
+  },
+  "french_horn": {
+    "agreed": 1,
+    "corrected": 0,
+    "family_agreed": 1,
+    "family_corrected": 0,
+    "corrected_to": {}
+  }
+}

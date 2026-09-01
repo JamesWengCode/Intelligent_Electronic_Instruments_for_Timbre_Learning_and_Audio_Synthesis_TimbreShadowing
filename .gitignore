@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# macOS
+.DS_Store
+
+# Claude Code local session config
+.claude/settings.local.json
+
+# Generated at runtime -- not source
+outputs/
+input/*.wav
+saved_timbres/
+
+# Training audio -- not tracked, see data/README.md
+data/*
+!data/README.md

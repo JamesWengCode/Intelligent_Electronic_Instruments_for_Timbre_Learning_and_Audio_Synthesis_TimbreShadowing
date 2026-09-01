@@ -1,0 +1,31 @@
+{
+  "families": [
+    "strings",
+    "woodwinds",
+    "brass",
+    "keyboard",
+    "guitar"
+  ],
+  "instruments": {
+    "violin": "strings",
+    "viola": "strings",
+    "cello": "strings",
+    "double_bass": "strings",
+    "flute": "woodwinds",
+    "oboe": "woodwinds",
+    "clarinet": "woodwinds",
+    "saxophone": "woodwinds",
+    "bassoon": "woodwinds",
+    "trumpet": "brass",
+    "trombone": "brass",
+    "french_horn": "brass",
+    "tuba": "brass",
+    "acoustic_piano": "keyboard",
+    "electric_piano": "keyboard",
+    "organ": "keyboard",
+    "synth": "keyboard",
+    "acoustic_guitar": "guitar",
+    "electric_guitar": "guitar",
+    "electric_bass": "guitar"
+  }
+}
