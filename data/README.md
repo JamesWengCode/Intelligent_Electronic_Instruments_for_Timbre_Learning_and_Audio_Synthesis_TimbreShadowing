@@ -1,4 +1,4 @@
-# Training data
+# Training Data
 
 `data/` is not tracked in this repo (~2 GB of audio). This describes the
 folder layout the classifier (`src/train_classifier.py`) expects, and where
@@ -21,31 +21,19 @@ Family and instrument folder names must match
 | keyboard | acoustic_piano, electric_piano, organ, synth |
 | guitar | acoustic_guitar, electric_guitar, electric_bass |
 
-An instrument with no data folder is simply skipped during training --
-you don't need audio for every instrument in the taxonomy to train the
-others.
-
 ## Source
 
-The original training set was assembled from three public sample libraries,
-identifiable by filename pattern:
+| Source | Files | Classes |
+|---|---:|---|
+| [University of Iowa Musical Instrument Samples](http://theremin.music.uiowa.edu/MIS.html) (`Instrument.style.dynamic[.string].pitch.stereo.aif`) | 992 | violin, viola, cello, double_bass, flute, oboe, clarinet, saxophone, bassoon, trumpet, trombone, french_horn, tuba |
+| [TinySOL](https://zenodo.org/records/3685367) (`Abbrev-ord-pitch-dynamic-...wav`, e.g. `Hn-ord-A#1-mf-N-T17d.wav`) | 1,915 | same as above except double_bass |
+| [NSynth Dataset](https://magenta.tensorflow.org/datasets/nsynth) (`*_electronic_*.wav`) | 2,819 | acoustic_piano, synth, electric_guitar, electric_bass |
 
-- [University of Iowa Musical Instrument Samples](http://theremin.music.uiowa.edu/MIS.html)
-  (`Instrument.style.dynamic[.string].pitch.stereo.aif`) -- trombone,
-  double_bass, violin, cello, bassoon, clarinet, flute.
-- [TinySOL](https://zenodo.org/records/3685367)
-  (`Abbrev-ord-pitch-dynamic-...wav`) -- french_horn, trumpet, tuba, viola,
-  oboe, saxophone.
-- [NSynth Dataset](https://magenta.tensorflow.org/datasets/nsynth)
-  (`*_electronic_*.wav`) -- keyboard/synth, keyboard/acoustic_piano,
-  guitar/electric_guitar, guitar/electric_bass.
+The 12 TinySOL recordings used as an evaluation set elsewhere in the
+project are at different pitches than the TinySOL material used here for
+training -- the two sets don't overlap.
 
-**Known issue:** `keyboard/acoustic_piano` currently contains NSynth
-`keyboard_electronic_*` samples, not real acoustic piano recordings -- the
-class label doesn't match the audio's actual timbre. Anyone rebuilding
-this dataset should replace it with real acoustic piano samples.
-
-## Format expectations
+## Format Expectations
 
 `train_classifier.py` pads/trims every clip to a fixed duration
 (`DURATION_SECONDS` in that file). Keep each class's clip lengths

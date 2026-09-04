@@ -37,23 +37,23 @@ Or run the pipeline directly from the command line on `input/target.wav`:
 python3 src/run_system.py
 ```
 
-## Project layout
+## Project Layout
 
 ```
-gui/app.py              Playable GUI (keyboard, EQ, FX, sound library)
-src/train_classifier.py Trains the hierarchical instrument classifier
-src/predict_instrument.py  Runs the trained classifier on one recording
-src/train_timbre.py     Fits the DDSP harmonic timbre model to a recording
-src/render_notes.py     Renders the learned timbre across a 36-note range
-src/enhance_rendered_notes.py  Post-processing (transient layering, etc.)
-src/run_system.py       One-command CLI pipeline (classify -> learn -> render)
-src/mode_selector.py    Per-instrument-family synthesis/render presets
-src/sound_library.py    Saved-sound library, organized by instrument taxonomy
-src/instrument_taxonomy.py  Shared family/instrument taxonomy
-models/                 Pretrained classifier weights and metadata
-data/                   Training audio (not tracked -- see data/README.md)
-saved_timbres/          User-saved sounds (generated at runtime)
-outputs/                Pipeline run outputs (generated at runtime)
+gui/app.py                    Playable GUI (keyboard, EQ, FX, sound library)
+src/train_classifier.py       Trains the hierarchical instrument classifier
+src/predict_instrument.py     Runs the trained classifier on one recording
+src/train_timbre.py           Fits the DDSP harmonic timbre model to a recording
+src/render_notes.py           Renders the learned timbre across a 36-note range
+src/enhance_rendered_notes.py Post-processing (transient layering, etc.)
+src/run_system.py             One-command CLI pipeline (classify -> learn -> render)
+src/mode_selector.py          Per-instrument-family synthesis/render presets
+src/sound_library.py          Saved-sound library, organized by instrument taxonomy
+src/instrument_taxonomy.py    Shared family/instrument taxonomy
+models/                       Pretrained classifier weights and metadata
+data/                         Training audio (not tracked -- see data/README.md)
+saved_timbres/                User-saved sounds (generated at runtime)
+outputs/                      Pipeline run outputs (generated at runtime)
 ```
 
 ## Data
@@ -62,3 +62,13 @@ outputs/                Pipeline run outputs (generated at runtime)
 [`data/README.md`](data/README.md) for the expected folder layout and where
 the training audio came from. The classifier can still run without it --
 `models/` already ships the pretrained weights.
+
+## Team
+
+Timbre Shadowing is one half of a two-part capstone project built by a
+four-person team. James Weng and Wen-Ting Chen were primarily
+responsible for Timbre Shadowing (this repository); Chia-Hui Yang and
+I-Pei Chen were primarily responsible for the project's other half,
+[TimbreEdge](https://github.com/Kuan801/TimbreEdge), a real-time
+embedded instrument on a Teensy 4.1. All four members contributed to
+system integration, testing, and the project report.
