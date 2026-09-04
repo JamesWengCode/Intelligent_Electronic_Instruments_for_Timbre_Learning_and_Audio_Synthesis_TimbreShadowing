@@ -17,6 +17,7 @@ venv/
 outputs/
 input/*.wav
 saved_timbres/
+presets/
 
 # Training audio -- not tracked, see data/README.md
 data/*
